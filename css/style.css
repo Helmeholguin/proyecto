@@ -12,12 +12,6 @@ body {
 	font-size: 300;
 	font-size: 16px;
 }
-
-#txtArea{
-    min-height: 150px;
-    background-color: rgb(243, 243, 243);
-    resize: none;
-}
 ol, ul {
 	list-style: none;
 }
@@ -69,16 +63,36 @@ banner
 .navbar {
     margin-bottom: 0px;
     border: 0px;
+}
+.navbar {
     border-radius: 0px;
-    position: fixed;
-    width: 100%;
-    height: 55px;
+}
+.navbar-default {
+    background-color: #fff;
+    padding: 20px 0;
+    transition: all 0.3s;
+}
+.navbar-default {
+    background-color: transparent;
+    border: 0px;
+}
+.navbar {
+    border-radius: 0px;
+}
+
+.navbar-brand
+{
+	font-family: 'Chewy', cursive;
+	font-size: 32px;
 }
 
 .navbar-brand img {
-    width: 70px !important;
-    height: 40px;
-    margin-top: -2px;
+    padding-top: 2px;
+    width: 120px !important;
+}
+
+.navbar-default .navbar-brand, .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+    color: #EA6045;
 }
 
 @media (max-width: 768px) {
@@ -129,7 +143,7 @@ banner
 #banner{
 	background: url('../img/bg-banner.jpg') no-repeat fixed;
 	background-size: cover;
-	min-height: 550px;
+	min-height: 650px;
 	position: relative;
 }
 .bg-color{
@@ -137,7 +151,7 @@ banner
 	min-height: 650px;
 }
 .banner-info{
-	padding-top: 60px;
+	padding-top: 190px;
 }
 .banner-logo img{
 	display: inline-block;
@@ -288,23 +302,22 @@ testimonial
 }
 .testi-info a {
     display: block;
-    width: 75px;
-    height: 75px;
+    width: 50px;
+    height: 50px;
     background-color: #fff;
     border-radius: 50%;
     float: left;
-    margin-right: 12px;
+    margin-right: 10px;
 }
 .testi-info a img{
 	border-radius: 50%;
 }
 .testi-info h3 {
     display: inline-block;
-    line-height: 30px;
+    line-height: 22px;
     font-weight: 600;
     color: #000;
-    margin-top: 12px;
-    margin-left: 18px;
+    margin-top: 8px;
 }
 .testi-info h3 > span {
     display: block;
