@@ -26,10 +26,11 @@ body {
     margin-top: 4%;
 }
 .hh2{
-    margin-left: 65%;
+    margin-left: 30%;
     background: transparent;
 }
 .hh2:hover{
+    width: 100%;
     border-radius: 50px;
     background-color: aquamarine;
 }
