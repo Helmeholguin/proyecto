@@ -22,28 +22,48 @@
 
 <body>
     <div class="container">
-<div class="text-center text-primary">
-    <h1>Fromulario de registro</h1>
-</div>
-        <form class="bit001 mt-2">
-            <div class="hh01 d-lg-flex d-md-flex offset-md-2 text-center">
-                <i>Nombre</i>
-                <div class="mb-sm-0 col-sm-12 col-md-4">
-                    <input type="text" class="form-control bg-transparent border-dark" placeholder="">
+        <div class="text-center text-primary mt-sm-5 mt-md-5 mt-xl-5">
+            <h1>Formulario de registro</h1>
+        </div>
+        <!-- Formulario -->
+        <form class="bit001 mt-sm-2 mt-md-1">
+            <!-- Nombre y Apellido -->
+            <div class="hh01 d-lg-flex offset-md-1 offset-lg-0 mt-lg-5 text-center">
+                <i class="col-md-12 col-lg-1">Nombre</i> <br>
+                <div class="mb-sm-0 col-sm-12 col-md-12 col-lg-5">
+                    <input type="text" class="form-control " placeholder="Ingrese su nombre" id="nombreUsuario">
                 </div>
-                <i>Apellido</i>
-                <div class="mb-sm-0 col-sm-12 col-md-4">
-                    <input type="text" class="form-control bg-transparent border-dark" placeholder="">
-                </div>
-            </div>
-            <div class="hh01 d-lg-flex d-md-flex">
-                <div class="mb-5 col-sm-12 col-md-6">
-                    <input type="text" class="form-control bg-transparent border-dark" placeholder="">
-                </div>
-                <div class="mb-5 col-sm-12 col-md-6">
-                    <input type="text" class="form-control bg-transparent border-dark" placeholder="">
+                <i class="mb-sm-0 col-sm-12 col-md-12 col-lg-1">Apellido</i> <br>
+                <div class="mb-sm-0 col-sm-12 col-md-12 col-lg-5">
+                    <input type="text" class="form-control " placeholder="Ingrese su apellido" id="apellidoUsuario">
                 </div>
             </div>
+            <!-- Usuario y Contraseña -->
+            <div class="hh01 d-lg-flex mt-lg-5 offset-md-1 offset-lg-0 text-center">
+                <i class="mb-sm-0 col-sm-12 col-md-12 col-lg-1">Usuario</i><br>
+                <div class="mb-sm-0 col-sm-12 col-md-12 col-lg-5">
+                    <input type="text" class="form-control " placeholder="Ingrese su nombre de usuario" id="idUsuario">
+                </div>
+                <i class="mb-sm-0 col-sm-12 col-md-12 col-lg-1">Contraseña</i><br>
+                <div class="mb-sm-0 col-sm-12 col-md-12 col-lg-5">
+                    <input type="password" class="form-control " placeholder="Ingrese su contraseña"
+                        id="contrasenaUsuario">
+                </div>
+            </div>
+            <!-- Correo y Telefono -->
+            <div class="hh01 d-lg-flex mt-4 mt-md-1 mt-lg-5 offset-md-1 offset-lg-0 text-center">
+                <i class="mb-sm-0 col-sm-12 col-md-12 col-lg-1">Correo</i><br>
+                <div class="mb-sm-0 col-sm-12 col-md-12 col-lg-5">
+                    <input type="text" class="form-control " placeholder="Ingrese su nombre de correo" id="idUsuario">
+                </div>
+                <i class="mb-sm-0 col-sm-12 col-md-12 col-lg-1">Telefono</i><br>
+                <div class="mb-sm-0 col-sm-12 col-md-12 col-lg-5">
+                    <input type="tel" class="form-control " placeholder="Ingrese su telefono" id="contrasenaUsuario">
+                </div>
+            </div>
+            <!-- Boton de Enviar Formulario -->
+            <button type="button" class="btn btn-primary col-sm-12 col-md-6 offset-md-4 offset-lg-3 mt-sm-5 mt-lg-5 hh" id="crearUsuario">Crear
+                Usuario</button>
         </form>
     </div>
 </body>
