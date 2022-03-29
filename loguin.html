@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Helmer Holguin Navas">
+    <meta name="author" content="HH">
     <title>PetroSalud</title>
     <link rel="icon" href="img/logo.png" type="image/ico">
     <link rel="stylesheet" href="css/log.css">
@@ -30,14 +30,14 @@
                 <div class="col p-4 d-flex flex-column position-static">
                     <form class="bit001">
                         <div class="input-group mb-3">
-                            <span class="input-group-text non bg-transparent border-dark">
+                            <span class="input-group-text non  border-dark">
                                 <img src="img/people.svg" alt="" width="24px">
                             </span>
-                            <input type="text" class="form-control bg-transparent border-dark" id="nombreUsuario">
+                            <input type="text" class="form-control border-dark" id="nombreUsuario">
                         </div>
                         <div class="input-group mb-3">
-                            <input type="password" name="password" id="passwordUsuario" class="form-control">
-                            <span class="input-group-text non"><img src="img/eye.svg" alt="" width="24px"
+                            <input type="password" name="password" id="passwordUsuario" class="form-control border-dark">
+                            <span class="input-group-text non border-dark"><img src="img/eye.svg" alt="" width="24px"
                                     onclick="cambia();">
                             </span>
                         </div>
@@ -56,7 +56,7 @@
                                 soluta facere odio vel laborum nobis ducimus voluptas natus necessitatibus veritatis.
                                 Nostrum sed sit eius architecto natus quam?</p>
                         </div>
-                        <button type="submit" class="mb-3 ab" id="iniciarLogin">Aceptar</button>
+                        <button type="submit" class="mb-3 ab">Aceptar</button>
                     </form>
                 </div>
             </div>
@@ -69,16 +69,14 @@
     </footer>
     <script>
         function cambia() {
-            var valor = $("#passwordUsuario").attr("type");
-            if (valor == "passwordUsuario") {
-                $("#passwordUsuario").attr("type", "text");
+            var valor = $("#password").attr("type");
+            if (valor == "password") {
+                $("#password").attr("type", "text");
             } else {
-                $("#passwordUsuario").attr("type", "password");
+                $("#password").attr("type", "password");
             }
         }
     </script>
-
-    <script src="./js/login.js"></script>
 </body>
 
 </html>
